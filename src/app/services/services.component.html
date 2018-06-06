@@ -1,0 +1,35 @@
+<section id="services">
+    <div class="container">
+        <h1 class="section-title scrollimation scale-in">The <span>Services</span> I offer</h1>
+
+        <div class="row services scrollimation fade-left" *ngFor = 'let service of leftServiceList'>
+            <div class="col-md-3 text-center">
+                <a class="icon"><i class="fa {{service.icon}}"></i></a>
+                <h2>{{service.name}}</h2>
+            </div>
+            <div class="col-md-3 details">
+                <p>{{service.matter_1}}</p>
+                <p>{{service.matter_2}}</p>
+            </div>
+        </div>
+        <div class="row line visible-md visible-lg">
+            <div class="col-md-3"></div>
+
+            <div class="col-md-3"></div>
+
+            <div class="col-md-3"></div>
+
+            <div class="col-md-3"></div>
+        </div>
+        <div class="row services bottom-row scrollimation fade-right" *ngFor = 'let service of rightServiceList'>
+            <div class="col-md-3 text-center col-md-push-3">
+                <h2>{{service.name}}</h2>
+                <a class="icon"><i class="fa {{service.icon}}"></i></a>
+            </div>
+            <div class="col-md-3 details col-md-pull-3">
+                <p>{{service.matter_1}}</p>
+                <p>{{service.matter_2}}</p>
+            </div>
+        </div>
+    </div>
+</section>
